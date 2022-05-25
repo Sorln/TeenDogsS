@@ -1,0 +1,42 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Teen Canines Script      (Sorln#3037)", "BloodTheme")
+local Tab = Window:NewTab("Free GP Charthers")
+local Section = Tab:NewSection("Lets you Spawn as Gamepass Charthers for free")
+Section:NewButton("Deucalion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Deucalion"
+}
+
+game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
+end)
+Section:NewButton("Kali", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Kali"
+}
+
+game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
+end)
+Section:NewButton("Ennis", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Ennis"
+}
+
+game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
+end)
+local Tab = Window:NewTab("Powers")
+local Section = Tab:NewSection("With Great Power Come's Well Power")
+Section:NewButton("Regain all energy fast click when low", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = -99999
+}
+
+game:GetService("ReplicatedStorage").EnergyDrain:FireServer(unpack(args))
+end)
+Section:NewButton("Scream", "ButtonInfo", function()
+    print("Clicked")
+    game:GetService("ReplicatedStorage").Moves.Scream:FireServer()
+end)
