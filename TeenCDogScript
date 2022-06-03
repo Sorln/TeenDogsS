@@ -26,6 +26,46 @@ Section:NewButton("Ennis", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
+Section:NewButton("Kira", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Kira Yukimura"
+}
+
+game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
+end)
+Section:NewButton("Noshiko", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Noshiko Yukimura"
+}
+
+game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
+end)
+Section:NewButton("Aiden", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Aiden"
+}
+
+game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
+end)
+Section:NewButton("Ethan", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Ethan"
+}
+
+game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
+end)
+Section:NewButton("Allison", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Allison Argent"
+}
+
+game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
+end)
 local Tab = Window:NewTab("Powers")
 local Section = Tab:NewSection("With Great Power Come's Well Power")
 Section:NewButton("Regain all energy fast click when low", "ButtonInfo", function()
